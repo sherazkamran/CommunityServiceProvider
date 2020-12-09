@@ -1,0 +1,88 @@
+/* CSP CUSTOM STYLESHEET
+Version: 1.0
+URI : Community Service Provider
+Keyword: Cummintym, Services, Provider
+Author: Ubair, Sheraz, Usama
+Author URI: 
+Description:
+License:
+*/
+#custom-bg{
+    padding-left:40px;
+    padding-right:40px;
+}
+.bg-silver{
+    background:#f4f6ff;
+}
+.bg-light{
+    background:#e7dfd5 !important;
+}
+#dotted-bg{
+    background-image:url('../assets/banners/dotted-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btn-primary{
+    background-color:#3b6978 !important;
+    outline: none;
+    border:none;
+    border-radius: 40px !important;
+}
+.badge-primary{
+    background-color:#3b6978;
+}
+.btn-primary:hover{
+    background:#84a9ac !important;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+}
+.card-text{
+    color:gray !important;
+}
+/* #b-right{
+    border-right:1px solid lightgrey !important;
+} */
+
+/* icon color */
+
+.fa-user,.fa-cart-arrow-down,.fa-users,.fa-cog,.fa-film,.fa-car,.fa-power-off{
+    color:#204051;
+}
+/* main menu link style */
+
+.navbar-nav .nav-item .nav-link{
+    color:#204051 !important;
+}
+.title, .card-title{
+    color:#204051 !important;
+}
+
+/* footer style */
+.footer-bg{
+    background:#84a9ac !important;
+}
+.footer-bg .nav-link, .footer-bg .nav-item,.about-text{
+    color:#e7dfd5 !important;
+}
+
+/* pagination style */
+
+.page-link{
+    color:#204051 !important;
+}
+
+/* single prodcut page breakcrum text style */
+
+.title a{
+    color:#204051 !important;
+    text-decoration: none;
+}
+.title a:hover{
+    color:#84a9ac  !important;
+    text-decoration: none;
+}
+
+.form-control:disabled{
+    background-color:none !important;
+
+}

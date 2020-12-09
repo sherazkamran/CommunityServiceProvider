@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="holo_red_light">#ff4444</color>
+    <color name="holo_red_dark">#cc0000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="silver_dull">#f7f7f7</color>
+
+    <color name="dove_grey_dark">#537C8C</color>
+    <color name="dove_grey_light">#87A0B2</color>
+    <color name="cloud_grey">#E9ECE9</color>
+    <color name="purple_grey">#BABAD9</color>
+    <color name="bluish_grey_light">#7DABCB</color>
+    <color name="bluish_grey_dark">#6FABD9</color>
+
+    <color name="navy_dark">#29508C</color>
+    <color name="navy_medium">#2A5593</color>
+    <color name="navy_light">#3C81B2</color>
+    <color name="navy_dark_pro">#141D46</color>
+
+
+
+    <color name="p_c_a_1">#bed7f1</color>
+    <color name="p_c_a_2">#83A6CC</color>
+    <color name="p_c_a_3">#3768A7</color>
+    <color name="p_c_a_4">#214176</color>
+
+    <color name="p_c_b_1">#676BF3</color>
+    <color name="p_c_b_2">#383DF9</color>
+    <color name="p_c_b_3">#1D2DFC</color>
+    <color name="p_c_b_4">#0B24F8</color>
+
+    <color name="p_c_c_1">#00BBD5</color>
+    <color name="p_c_c_2">#02A8F4</color>
+    <color name="p_c_c_3">#2095F2</color>
+    <color name="p_c_c_4">#3E50B5</color>
+
+    <color name="txt_red">#cc0000</color>
+    <color name="txt_white">#ffffff</color>
+    <color name="txt_black">#000000</color>
+    <color name="txt_pca3">#3768A7</color>
+    <color name="no_color"></color>
+
+
+
+
+    <color name="grey_bg_colour">#a5a7a9</color>
+    <color name="dull_green_colour">#6FB856</color>
+    <color name="gen_bg_color">#f7f7f7</color>
+    <color name="CSP_s_green">#9FD702</color>
+    <color name="primary_dark">#363A40</color>
+    <color name="background_pink">#77F0ACAC</color>
+    <color name="background_toolbar">#214176</color>
+    <color name="background_home_screen">#3768A7</color>
+    <color name="background_login">#363A40</color>
+    <color name="background_signup">#3768A7</color>
+    <color name="background_drawer_layout">#3768A7</color>
+    <color name="background_main_nav_controls">#3768A7</color>
+    <color name="background_main_nav_controls_extra">#96AEB8</color>
+    <color name="ic_custom_csp_logo">#96AEB8</color>
+    <color name="ic_more_background">#83A6CC</color>
+    <color name="grid_item_background">#83A6CC</color>
+    <color name="single_product_background">#83A6CC</color>
+    <color name="carousel_page_color">#00000000</color>
+    <color name="carousel_fill_color">#ffffffff</color>
+    <color name="carousel_stroke_color">#ffbed7f1</color>
+    <color name="activities_gen_background">#E2F6F7</color>
+    <color name="background_card_view">#ff96AEB8</color>
+    <color name="background_dash">#77c2ebed</color>
+</resources>

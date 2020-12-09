@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "707714079714",
+    "firebase_url": "https://hisabkitab-b53ec.firebaseio.com",
+    "project_id": "hisabkitab-b53ec",
+    "storage_bucket": "hisabkitab-b53ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707714079714:android:fd926566fe95400f8bf7bb",
+        "android_client_info": {
+          "package_name": "com.izactech.hisabkitab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707714079714-a79uv7re07ajjksp9ia6c9tbj980nant.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbNTz5gpt_A-n3FaEliGLlywI0KDTVKaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707714079714-a79uv7re07ajjksp9ia6c9tbj980nant.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

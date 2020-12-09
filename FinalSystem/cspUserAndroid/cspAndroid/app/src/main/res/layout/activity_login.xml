@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/con_layout_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark">
+
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/btn_custom_white_rad15"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Login"
+        android:onClick="loginUser"
+        android:textColor="@color/CSP_s_green"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxt_password_login" />
+
+    <EditText
+        android:id="@+id/edtTxt_email_login"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_55sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:ems="10"
+        android:text="sheraz@gmail.com"
+        android:textSize="@dimen/_15ssp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Enter Email Here."
+        android:inputType="textEmailAddress"
+        android:textColor="@color/txt_white"
+
+        android:textColorHint="@color/txt_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_login" />
+
+    <EditText
+        android:id="@+id/edtTxt_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:ems="10"
+        android:text="sk1234"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_55sdp"
+        android:textSize="@dimen/_15ssp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Enter Password Here."
+        android:inputType="textPassword"
+        android:textColor="@color/txt_white"
+        android:textColorHint="@color/txt_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxt_email_login" />
+
+    <Button
+        android:id="@+id/btn_signup_login"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:background="@drawable/btn_custom_pca3_rad15"
+        android:fadingEdge="horizontal"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Sign Up"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginRight="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/edtTxt_not_member"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_login" />
+
+    <TextView
+        android:id="@+id/edtTxt_not_member"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:longClickable="false"
+        android:text="Not a member?"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_signup_login"
+        app:layout_constraintEnd_toStartOf="@+id/btn_signup_login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_login" />
+
+    <ImageView
+        android:id="@+id/logo_login"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_75sdp"
+        android:background="@drawable/csp_logo_wg"
+        android:focusable="false"
+        android:longClickable="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/csp_logo_wg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

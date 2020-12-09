@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cspandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/csp_logo_mnm"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/csp_logo_mnm"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".user_end.ServicesHistory"></activity>
+        <activity android:name=".user_end.ComplaintsHistory" />
+        <activity android:name=".user_end.ReservationsHistory" />
+        <activity android:name=".user_end.ShoppingHistory" />
+        <activity android:name=".user_end.History" />
+        <activity android:name=".user_end.PayNow" />
+        <activity android:name=".user_end.Cart" />
+        <activity android:name=".user_end.SingleProduct" />
+        <activity android:name=".user_end.HomeAppliances" />
+        <activity android:name=".user_end.ShoesGarments" />
+        <activity android:name=".user_end.FruitsVegetables" />
+        <activity android:name=".user_end.FastFood" />
+        <activity android:name=".user_end.Complaints" />
+        <activity android:name=".user_end.PayBills" />
+        <activity android:name=".user_end.HireServices" />
+        <activity android:name=".user_end.Reserve" />
+        <activity android:name=".user_end.Shop" />
+        <activity android:name=".user_end.Profile" />
+        <activity android:name=".user_end.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".user_end.Signup" />
+        <activity android:name=".user_end.drawer_layout" />
+    </application>
+
+</manifest>

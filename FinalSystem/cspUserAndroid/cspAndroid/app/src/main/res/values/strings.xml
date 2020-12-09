@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Community Service Provider</string>
+    <string name="community">Community</string>
+    <string name="service">Service</string>
+    <string name="provider">Provider</string>
+    <string name="title_activity_csp_nav_drawer">csp_nav_drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="home_second">Home Second</string>
+    <string name="cat_1">Groceries</string>
+    <string name="cat_2">Home Appliances</string>
+    <string name="cat_3">Vegetables and Fruits</string>
+    <string name="cat_4">Fast Foods</string>
+    <string name="cat_5">Shoes and Garments</string>
+
+
+    <string-array name="complain_categories">
+        <item>Unethical Behaviour of Servicemen</item>
+        <item>Damage to Public/Community Property</item>
+        <item>Un-satisfactory/Low Quality Service</item>
+        <item>Noise</item>
+        <item>Theft</item>
+        <item>Forced Entry</item>
+        <item>Disturbance</item>
+        <item>Street Racing</item>
+        <item>Suspicious Activity</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="professional_services">
+        <item>Plumber</item>
+        <item>Janitor</item>
+        <item>Carpenter</item>
+        <item>Welder</item>
+        <item>Gardener</item>
+        <item>Mechanic</item>
+        <item>Electrician</item>
+    </string-array>
+
+    <string-array name="vehicles_to_reserve">
+        <item>Cultus</item>
+        <item>Aulto</item>
+        <item>Akira</item>
+        <item>Vigo</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pay_bills"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gen_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/csp_toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gen_bg_color">
+
+
+            <TextView
+                android:id="@+id/label_payBills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="Pay Bills Here!"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/edt_txt_bill_id"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="Enter Bill Id here"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_16ssp"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_payBills" />
+
+            <Button
+                android:id="@+id/btn_fetch_bill_details"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_fetch_details"
+                android:onClick="fetchBillDetails"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="Fetch Details"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_txt_bill_id" />
+
+            <ImageView
+                android:id="@+id/iv_bill_img"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:backgroundTint="@color/holo_red_light"
+                android:maxWidth="@dimen/_250sdp"
+                android:maxHeight="@dimen/_300sdp"
+                android:minWidth="@dimen/_250sdp"
+                android:minHeight="@dimen/_300sdp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_payBills" />
+
+            <LinearLayout
+                android:id="@+id/bill_month_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_bill_img">
+
+
+                <TextView
+                    android:id="@+id/label_bill_month"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Month:"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    android:clickable="false"
+                    android:textColor="@color/txt_black" />
+
+                <TextView
+                    android:id="@+id/txt_vw_bill_month"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    android:clickable="false"
+                    android:textColor="@color/txt_black" />
+
+                <RadioGroup
+                    android:id="@+id/rg_bill_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:outlineSpotShadowColor="@color/CSP_s_green">
+
+                    <RadioButton
+                        android:id="@+id/rb_paid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:text="Paid"
+                        android:checked="true"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_not_paid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:text="Not Paid"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_12ssp" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_pay_bill_pay_bills"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/btn_fetch_details"
+                android:onClick="overToPayNowScreen"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="Pay Bill"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bill_month_status" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include layout="@layout/main_nav_drawer">
+
+        </include>
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

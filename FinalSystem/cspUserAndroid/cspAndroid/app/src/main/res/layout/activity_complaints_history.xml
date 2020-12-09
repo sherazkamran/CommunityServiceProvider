@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_complaints_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_end.ComplaintsHistory">
+
+    <LinearLayout
+        android:id="@+id/toChangeColour_ll_ser_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gen_bg_color"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/csp_toolbar_ServicesHistory"
+            layout="@layout/csp_toolbar" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con_layout_activity_ServicesHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/csp_toolbar_ServicesHistory">
+
+            <Spinner
+                android:id="@+id/spinner_service_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:textColor="@color/CSP_s_green"
+                android:textSize="@dimen/_18ssp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/service_history_cons_L"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_55sdp"
+                android:layout_marginBottom="@dimen/_60sdp"
+                android:background="@color/gen_bg_color"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:id="@+id/upper_boundary_service_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_5sdp"
+                            android:background="@color/CSP_s_green"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/serv_hist_serv_name"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/txt_vw_bg_container"
+                            android:gravity="left|center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text="Janito"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/upper_boundary_service_history" />
+
+
+                        <TextView
+                            android:id="@+id/serv_hist_serv_req_time"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/txt_vw_bg_container"
+                            android:gravity="left|center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text="Janito"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/serv_hist_serv_name" />
+
+
+                        <TextView
+                            android:id="@+id/serv_hist_serv_req_date"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/txt_vw_bg_container"
+                            android:gravity="left|center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text="Janito"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/serv_hist_serv_req_time" />
+
+
+                        <TextView
+                            android:id="@+id/serv_hist_serv_status"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/txt_vw_bg_container"
+                            android:gravity="left|center_vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text="Janito"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/serv_hist_serv_req_date" />
+
+
+                        <TextView
+                            android:id="@+id/serv_hist_serv_loc"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/txt_vw_bg_container"
+                            android:gravity="left|center_vertical"
+                            android:inputType="textMultiLine"
+                            android:maxLength="100"
+                            android:maxLines="2"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text="Janito"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/serv_hist_serv_ID" />
+
+                        <TextView
+                            android:id="@+id/serv_hist_serv_ID"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:background="@drawable/txt_vw_bg_container"
+                            android:gravity="left"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/serv_hist_serv_status" />
+
+
+                        <TextView
+                            android:id="@+id/serv_hist_serv_desc"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_160sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/txt_vw_bg_container"
+                            android:inputType="textMultiLine"
+                            android:maxLength="700"
+                            android:maxLines="10"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Janito"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_14ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/serv_hist_serv_loc" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_25sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/serv_hist_serv_desc">
+
+                        </View>
+
+
+                        <LinearLayout
+                            android:id="@+id/lower_boundary_service_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_5sdp"
+                            android:background="@color/CSP_s_green"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </ScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btn_back_service_history"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/btn_fetch_details"
+                android:gravity="center"
+                android:onClick="backToAllServices"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="Back"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <Button
+                android:id="@+id/btn_fetch_service"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/btn_fetch_details"
+                android:gravity="center"
+                android:onClick="fetchCompleteDetails"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="Fetch Reservations Details"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="italic"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_service_history" />
+
+
+            <ImageView
+                android:id="@+id/iv_info_fetch_details"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:onClick="changeVisInfoSpinner"
+                android:src="@drawable/ic_info"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtvw_info_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="On Left, the number represent your specific service-ID and on right is the Service."
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_fetch_service">
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include layout="@layout/main_nav_drawer">
+
+        </include>
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+

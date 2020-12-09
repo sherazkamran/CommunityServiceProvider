@@ -1,0 +1,23 @@
+.zoom {
+  padding: 30px;
+
+  transition: transform 0.3s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.slide-up,
+.slide-down {
+  overflow: hidden;
+}
+.slide-up > div,
+.slide-down > div {
+  transform: translateY(-100%);
+  transition: 0.4s ease-in-out;
+}
+.slide-down > div {
+  transform: translateY(0);
+}

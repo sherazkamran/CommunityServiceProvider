@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pay_now"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gen_bg_color"
+    tools:context=".user_end.PayNow">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/csp_toolbar_pay_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <TextView
+            android:id="@+id/txtvw_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/no_color"
+            android:text="@string/app_name"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/_16ssp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/gen_bg_color"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_1sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/csp_toolbar_pay_now">
+
+        <TextView
+            android:id="@+id/txtvw_name_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Name on Card:"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtxt_name_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:hint="Enter name on card here..."
+            android:inputType="text"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvw_name_card" />
+
+        <TextView
+            android:id="@+id/txtvw_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Credit Card Number:"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtxt_name_card" />
+
+        <EditText
+            android:id="@+id/edtxt_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:hint="Enter credit card number here..."
+            android:inputType="number"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvw_card_number" />
+
+        <TextView
+            android:id="@+id/txtvw_cv_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="CV Code:"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtxt_card_number" />
+
+        <EditText
+            android:id="@+id/edtxt_cv_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:hint="Enter CV code here..."
+            android:inputType="textPassword"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvw_cv_code" />
+
+        <TextView
+            android:id="@+id/txtvw_expiry_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Expiry Date:"
+            android:textColor="@color/txt_black"
+            android:visibility="invisible"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtxt_cv_code" />
+
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/edtxt_expiry_date"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/_40sdp"-->
+        <!--            android:layout_marginLeft="@dimen/_10sdp"-->
+        <!--            android:hint="Enter expiry date here..."-->
+        <!--            android:inputType="datetime"-->
+        <!--            android:textColor="@color/txt_black"-->
+        <!--            android:textSize="@dimen/_16ssp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.493"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/txtvw_expiry_date" />-->
+
+
+        <!--        <DatePicker-->
+        <!--            android:id="@+id/datePicker1"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/_150sdp"-->
+        <!--            android:layout_marginBottom="76dp"-->
+        <!--            android:calendarViewShown="false"-->
+        <!--            android:datePickerMode="spinner"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/btn_pay_bill_now"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.25"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="txtvw_expiry_date" />-->
+
+
+        <com.squareup.timessquare.CalendarPickerView
+            android:id="@+id/exp_date_pay_now"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtvw_expiry_date" />
+
+
+        <Button
+            android:id="@+id/btn_pay_bill_now"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/btn_fetch_details"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="Pay Now"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exp_date_pay_now" />
+
+        <TextView
+            android:id="@+id/pay_bill_intented_bill_ID"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text=""
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_pay_bill_now" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
